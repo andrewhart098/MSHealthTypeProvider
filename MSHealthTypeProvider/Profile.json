@@ -1,0 +1,12 @@
+﻿{
+  "firstName": "string",
+  "middleName": "string",
+  "lastName": "string",
+  "birthdate": "2015-12-08T16:58:59.591Z",
+  "postalCode": "string",
+  "gender": "string",
+  "height": 0,
+  "weight": 0,
+  "preferredLocale": "string",
+  "lastUpdateTime": "2015-12-08T16:58:59.591Z"
+}

@@ -1,0 +1,42 @@
+﻿{
+  "summaries": [
+    {
+      "userId": "string",
+      "startTime": "2015-12-08T16:58:59.594Z",
+      "endTime": "2015-12-08T16:58:59.594Z",
+      "parentDay": "2015-12-08T16:58:59.594Z",
+      "isTransitDay": true,
+      "period": "Unknown",
+      "duration": "string",
+      "stepsTaken": 0,
+      "caloriesBurnedSummary": {
+        "period": "Unknown",
+        "totalCalories": 0
+      },
+      "heartRateSummary": {
+        "period": "Unknown",
+        "averageHeartRate": 0,
+        "peakHeartRate": 0,
+        "lowestHeartRate": 0
+      },
+      "distanceSummary": {
+        "period": "Unknown",
+        "totalDistance": 0,
+        "totalDistanceOnFoot": 0,
+        "actualDistance": 0,
+        "elevationGain": 0,
+        "elevationLoss": 0,
+        "maxElevation": 0,
+        "minElevation": 0,
+        "waypointDistance": 0,
+        "speed": 0,
+        "pace": 0,
+        "overallPace": 0
+      },
+      "activeHours": 0,
+      "uvExposure": "string"
+    }
+  ],
+  "nextPage": "string",
+  "itemCount": 0
+}
