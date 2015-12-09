@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MSHealth.Data", "MSHealthTypeProvider\MSHealth.Data.fsproj", "{651E60AE-3897-4FF3-B0C5-450033BD1DDA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSHealth.Tests", "MSHealth.Tests\MSHealth.Tests.csproj", "{7C59339B-5489-4D4F-A4C4-3FBF5C199897}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MSHealth.Data", "MSHealth.Data\MSHealth.Data.fsproj", "{651E60AE-3897-4FF3-B0C5-450033BD1DDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C59339B-5489-4D4F-A4C4-3FBF5C199897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C59339B-5489-4D4F-A4C4-3FBF5C199897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C59339B-5489-4D4F-A4C4-3FBF5C199897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C59339B-5489-4D4F-A4C4-3FBF5C199897}.Release|Any CPU.Build.0 = Release|Any CPU
 		{651E60AE-3897-4FF3-B0C5-450033BD1DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{651E60AE-3897-4FF3-B0C5-450033BD1DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{651E60AE-3897-4FF3-B0C5-450033BD1DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU

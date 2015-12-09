@@ -1,21 +1,20 @@
 ﻿module MSHealthTypeProvider.Devices
+open MSHealth.Data.Domain
 open FSharp.Data
+open Newtonsoft.Json
 
-let baseUrl = "https://api.microsofthealth.net/v1/me/"
-let devicesUrl = baseUrl + "Devices"
-
-type Device = JsonProvider<"Device.json">
+let devicesUrl = "https://api.microsofthealth.net/v1/me/Devices"
 
 let getDevices token =
     let jsonResponse = 
         Http.RequestString
             ( devicesUrl, 
               headers=["Authorization", token])
-    Device.Parse(jsonResponse)
+    JsonConvert.DeserializeObject<Device>(jsonResponse)
 
 let getDeviceById token id = 
     let jsonResponse = 
         Http.RequestString
             ( devicesUrl + "/" + id, 
               headers=["Authorization", token])
-    Device.Parse(jsonResponse)
+    JsonConvert.DeserializeObject<Device>(jsonResponse)
