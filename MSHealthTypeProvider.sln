@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MSHealthTypeProvider", "MSHealthTypeProvider\MSHealthTypeProvider.fsproj", "{651E60AE-3897-4FF3-B0C5-450033BD1DDA}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MSHealth.Data", "MSHealthTypeProvider\MSHealth.Data.fsproj", "{651E60AE-3897-4FF3-B0C5-450033BD1DDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
