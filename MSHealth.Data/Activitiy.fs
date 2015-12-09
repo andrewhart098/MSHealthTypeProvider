@@ -3,19 +3,22 @@ open MSHealth.Data.Domain
 open FSharp.Data
 open Newtonsoft.Json
 
-
 let activitiesUrl = "https://api.microsofthealth.net/v1/me/Activities"
 
-let getActivites token = 
-    let jsonResponse = 
-        Http.RequestString
+let getActivites token = async {
+    let! jsonResponse = 
+        Http.AsyncRequestString
             ( activitiesUrl, 
               headers=["Authorization", token])
-    JsonConvert.DeserializeObject<Activities>(jsonResponse)
+    return JsonConvert.DeserializeObject<Activities>(jsonResponse)
+}
 
-let getActivityById token id = 
-    let jsonResponse = 
-        Http.RequestString
+
+let getActivityById token id =  async {
+    let! jsonResponse = 
+        Http.AsyncRequestString
             ( activitiesUrl + "/" + id, 
               headers=["Authorization", token])
-    JsonConvert.DeserializeObject<Activities>(jsonResponse)
+    return JsonConvert.DeserializeObject<Activities>(jsonResponse)
+}
+

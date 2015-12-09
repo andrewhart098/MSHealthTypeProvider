@@ -6,9 +6,10 @@ open Newtonsoft.Json
 let summariesUrl = "https://api.microsofthealth.net/v1/me/Summaries"
 
 
-let getSummaries token period = 
-    let jsonResponse =
-        Http.RequestString
+let getSummaries token period = async {
+    let! jsonResponse =
+        Http.AsyncRequestString
             ( summariesUrl + "/" + period,
               headers=["Authorization", token] )
-    JsonConvert.DeserializeObject<Summaries>(jsonResponse)
+    return JsonConvert.DeserializeObject<Summaries>(jsonResponse)
+}
