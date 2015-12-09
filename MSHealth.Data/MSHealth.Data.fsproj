@@ -50,10 +50,6 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <None Include="Activities.json" />
-    <None Include="Device.json" />
-    <None Include="Profile.json" />
-    <None Include="Summaries.json" />
     <Compile Include="Domain.fs" />
     <Compile Include="Activitiy.fs" />
     <Compile Include="Device.fs" />
