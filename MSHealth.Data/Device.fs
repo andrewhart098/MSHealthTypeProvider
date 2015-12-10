@@ -8,7 +8,7 @@ let devicesUrl = "https://api.microsofthealth.net/v1/me/Devices"
 let ParseDevicesResponse json = 
     JsonConvert.DeserializeObject<Device>(json)
 
-let getDevices token = async {
+let GetDevices token = async {
     let! jsonResponse = 
         Http.AsyncRequestString
             ( devicesUrl, 
@@ -17,7 +17,7 @@ let getDevices token = async {
 }
 
 
-let getDeviceById token id = async {
+let GetDeviceById token id = async {
     let! jsonResponse = 
         Http.AsyncRequestString
             ( devicesUrl + "/" + id, 
