@@ -62,10 +62,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="JsonResponses\Activities.json" />
-    <None Include="JsonResponses\Device.json" />
-    <None Include="JsonResponses\Profile.json" />
-    <None Include="JsonResponses\Summaries.json" />
+    <Content Include="JsonResponses\Activities.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JsonResponses\Device.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JsonResponses\Profile.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JsonResponses\Summaries.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

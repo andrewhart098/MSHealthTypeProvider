@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MSHealth.Data;
-using MSHealthTypeProvider;
 
 namespace MSHealth.Tests
 {

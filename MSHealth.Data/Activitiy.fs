@@ -5,12 +5,16 @@ open Newtonsoft.Json
 
 let activitiesUrl = "https://api.microsofthealth.net/v1/me/Activities"
 
+let ParseActivitiesResponse json = 
+    JsonConvert.DeserializeObject<Activities>(json)
+
+
 let getActivites token = async {
     let! jsonResponse = 
         Http.AsyncRequestString
             ( activitiesUrl, 
               headers=["Authorization", token])
-    return JsonConvert.DeserializeObject<Activities>(jsonResponse)
+    return ParseActivitiesResponse jsonResponse
 }
 
 
@@ -19,6 +23,5 @@ let getActivityById token id =  async {
         Http.AsyncRequestString
             ( activitiesUrl + "/" + id, 
               headers=["Authorization", token])
-    return JsonConvert.DeserializeObject<Activities>(jsonResponse)
+    return ParseActivitiesResponse jsonResponse
 }
-
