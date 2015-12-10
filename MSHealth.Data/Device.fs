@@ -1,4 +1,4 @@
-﻿module MSHealth.Data.Devices
+﻿module MSHealth.Data.Device
 open MSHealth.Data.Domain
 open FSharp.Data
 open Newtonsoft.Json

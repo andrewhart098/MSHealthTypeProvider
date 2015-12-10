@@ -1,4 +1,4 @@
-﻿module MSHeath.Data.Summary
+﻿module MSHeath.Data.Summaries
 open MSHealth.Data.Domain
 open FSharp.Data
 open Newtonsoft.Json

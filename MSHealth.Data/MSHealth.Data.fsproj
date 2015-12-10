@@ -51,10 +51,10 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="Domain.fs" />
-    <Compile Include="Activitiy.fs" />
+    <Compile Include="Activities.fs" />
     <Compile Include="Device.fs" />
     <Compile Include="Profile.fs" />
-    <Compile Include="Summary.fs" />
+    <Compile Include="Summaries.fs" />
     <Compile Include="AssemblyInfo.fs" />
     <Content Include="packages.config" />
   </ItemGroup>

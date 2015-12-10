@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MSHealth.Data;
+using MSHeath.Data;
 
 namespace MSHealth.Tests
 {
@@ -18,7 +19,7 @@ namespace MSHealth.Tests
         [TestMethod]
         public void CanGetDevices()
         {
-            var devices = Devices.getDevices(token);
+            var devices = Device.getDevices(token);
             Assert.IsNotNull(devices);
         }
 
@@ -33,14 +34,14 @@ namespace MSHealth.Tests
         [TestMethod]
         public void CanGetSummaryHourly()
         {
-            var summary = Summary.getSummaries(token, "hourly");
+            var summary = Summaries.getSummaries(token, "hourly");
             Assert.IsNotNull(summary);
         }
 
         [TestMethod]
         public void CanGetSummaryDaily()
         {
-            var summary = Summary.getSummaries(token, "daily");
+            var summary = Summaries.getSummaries(token, "daily");
             Assert.IsNotNull(summary);
         }
 

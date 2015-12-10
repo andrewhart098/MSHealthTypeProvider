@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MSHealth.Data;
+using MSHeath.Data;
 
 
 namespace MSHealth.Tests
@@ -26,7 +27,7 @@ namespace MSHealth.Tests
         public void CanParseDevices()
         {
             var device = File.ReadAllText(@".\JsonResponses\Device.json");
-            var dev = Devices.ParseDevicesResponse(device);
+            var dev = Device.ParseDevicesResponse(device);
 
             Assert.AreEqual(dev.CreatedDate.Date, DateTime.Parse("2015-12-08T16:58:59.585Z").Date);
             Assert.AreEqual(dev.Id, "string");
@@ -48,7 +49,7 @@ namespace MSHealth.Tests
         public void CanParseSummary()
         {
             var summary = File.ReadAllText(@".\JsonResponses\Summaries.json");
-            var sum = Summary.ParseSummaryResponse(summary);
+            var sum = Summaries.ParseSummaryResponse(summary);
 
             Assert.AreEqual(sum.ItemCount, 0);
             Assert.AreEqual(sum.Summaries.First().StepsTaken, 0);
