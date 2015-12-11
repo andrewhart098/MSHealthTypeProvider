@@ -1,12 +1,16 @@
 ﻿{
-  "id": "string",
-  "displayName": "string",
-  "lastSuccessfulSync": "2015-12-08T16:58:59.585Z",
-  "deviceFamily": "Unknown",
-  "hardwareVersion": "string",
-  "softwareVersion": "string",
-  "modelName": "string",
-  "manufacturer": "string",
-  "deviceStatus": "Unknown",
-  "createdDate": "2015-12-08T16:58:59.585Z"
+  "deviceProfiles": [
+    {
+      "id": "string",
+      "displayName": "string",
+      "lastSuccessfulSync": "2015-12-08T16:58:59.585Z",
+      "deviceFamily": "Unknown",
+      "hardwareVersion": "string",
+      "softwareVersion": "string",
+      "modelName": "string",
+      "manufacturer": "string",
+      "deviceStatus": "Unknown",
+      "createdDate": "2015-12-08T16:58:59.585Z"
+    }
+  ]
 }

@@ -6,6 +6,9 @@ open Newtonsoft.Json
 let devicesUrl = "https://api.microsofthealth.net/v1/me/Devices"
 
 let ParseDevicesResponse json = 
+    JsonConvert.DeserializeObject<Devices>(json)
+
+let ParseDeviceResponse json = 
     JsonConvert.DeserializeObject<Device>(json)
 
 let getDevices token = async {
@@ -22,5 +25,5 @@ let getDeviceById token id = async {
         Http.AsyncRequestString
             ( devicesUrl + "/" + id, 
               headers=["Authorization", token])
-    return ParseDevicesResponse jsonResponse
+    return ParseDeviceResponse jsonResponse
 }

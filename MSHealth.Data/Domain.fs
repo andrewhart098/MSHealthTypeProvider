@@ -28,6 +28,10 @@ type Device = {
     CreatedDate : System.DateTime
 }
 
+type Devices = {
+    DeviceProfiles : seq<Device>
+} 
+
 // Summary Type
 type DistanceSummary = {
     Period : string
