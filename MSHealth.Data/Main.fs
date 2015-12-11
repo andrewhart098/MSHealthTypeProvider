@@ -7,7 +7,7 @@ open MSHealth.Data
 // Switch naming convention to C#
 
 // Activities
-let GetAllACtivities token =
+let GetAllActivities token =
     Async.StartAsTask(MSHealth.Data.Activities.getAllActivites token)
 
 let GetActivityById token id = 
