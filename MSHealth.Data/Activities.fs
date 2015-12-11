@@ -9,7 +9,7 @@ let ParseActivitiesResponse json =
     JsonConvert.DeserializeObject<Activities>(json)
 
 
-let GetAllActivites token = async {
+let getAllActivites token = async {
     let! jsonResponse = 
         Http.AsyncRequestString
             ( activitiesUrl, 
@@ -18,7 +18,7 @@ let GetAllActivites token = async {
 }
 
 
-let GetActivityById token id =  async {
+let getActivityById token id =  async {
     let! jsonResponse = 
         Http.AsyncRequestString
             ( activitiesUrl + "/" + id, 

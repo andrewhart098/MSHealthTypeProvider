@@ -8,7 +8,7 @@ let profileUrl = "https://api.microsofthealth.net/v1/me/Profile"
 let ParseProfileResponse json =
     JsonConvert.DeserializeObject<Profile>(json)
 
-let GetProfile token = async {
+let getProfile token = async {
     let! jsonResponse =
         Http.AsyncRequestString
             ( profileUrl,
