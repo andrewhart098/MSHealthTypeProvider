@@ -24,7 +24,7 @@ let activities =  Async.RunSynchronously (MSHealth.Data.Activities.getAllActivit
 // This assumes you are using the sleep app on you MS Band
 let awakeInBedMinutesByDay = activities.SleepActivities
                              |> Seq.sortBy (fun x -> x.StartTime)
-                             |> Seq.map (fun x -> [System.TimeSpan.FromTicks((x.FallAsleepTime.Ticks - x.StartTime.Ticks)), x.StartTime])
+                             |> Seq.map (fun x -> [System.TimeSpan.FromTicks((x.FallAsleepTime.Ticks - x.StartTime.Ticks).TotalSeconds), x.StartTime])
                              |> Seq.toList 
 ```
 
